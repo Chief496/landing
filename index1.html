@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Real Estate Landing page</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Find a Team</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <button class="nav-cta">Get in Touch</button>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <!-- <span class="hero-tag">Architecture & Construction</span> -->
+      <h1>We Provide <span>Architectural</span> Design and Construction</h1>
+      <p>More than 500 building and housing projects that we have built. The building owner chose us over other contractors because our work is different.</p>
+      <a href="#" class="hero-btn">Discover More</a>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">300<span>+</span></span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">900<span>+</span></span>
+          <span class="stat-label">Amazing Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">20<span>+</span></span>
+          <span class="stat-label">Awards Winning</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero-visual">
+      <div class="hero-img-main">
+        <svg viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="420" fill="#1e2535"/>
+          <rect x="20" y="120" width="80" height="300" fill="#2a3550"/>
+          <rect x="40" y="80" width="40" height="340" fill="#334870"/>
+          <rect x="110" y="60" width="100" height="360" fill="#2a3550"/>
+          <rect x="125" y="30" width="70" height="390" fill="#1e2a3a"/>
+          <rect x="220" y="100" width="60" height="320" fill="#2a3550"/>
+          <rect x="290" y="40" width="120" height="380" fill="#334870"/>
+          <rect x="300" y="20" width="100" height="400" fill="#3a5080"/>
+          <rect x="420" y="80" width="60" height="340" fill="#2a3550"/>
+          <rect x="45" y="100" width="8" height="10" fill="#56ccf2" opacity=".5"/>
+          <rect x="58" y="100" width="8" height="10" fill="#56ccf2" opacity=".3"/>
+          <rect x="45" y="120" width="8" height="10" fill="#56ccf2" opacity=".5"/>
+          <rect x="130" y="50" width="10" height="12" fill="#56ccf2" opacity=".4"/>
+          <rect x="148" y="50" width="10" height="12" fill="#56ccf2" opacity=".2"/>
+          <rect x="130" y="72" width="10" height="12" fill="#56ccf2" opacity=".4"/>
+          <rect x="148" y="72" width="10" height="12" fill="#2f80ed" opacity=".6"/>
+          <rect x="305" y="40" width="12" height="14" fill="#56ccf2" opacity=".5"/>
+          <rect x="325" y="40" width="12" height="14" fill="#56ccf2" opacity=".3"/>
+          <rect x="345" y="40" width="12" height="14" fill="#2f80ed" opacity=".7"/>
+          <rect x="305" y="64" width="12" height="14" fill="#56ccf2" opacity=".4"/>
+          <rect x="325" y="64" width="12" height="14" fill="#56ccf2" opacity=".5"/>
+          <ellipse cx="320" cy="200" rx="120" ry="80" fill="#2f80ed" opacity=".08"/>
+          <rect x="0" y="390" width="480" height="30" fill="#111827"/>
+        </svg>
+      </div> -->
+      <div class="joel"><img src="joel-filipe-RFDP7_80v5A-unsplash (1) 1.png" alt=""></div>
+      <div class="frame630"><img src="Frame 630.png" alt=""></div>
+      </div>
+      <div class="hero-badge">
+        <div class="b-num">25</div>
+        <div class="b-text">Years Operated</div>
+      </div>
+      <div class="hero-badge2">
+        <div class="b-num">500+</div>
+        <div class="b-text">Genius Projects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<div class="clients">
+  <span class="client-logo">ADIRA</span>
+  <span class="client-logo">SPACE PRO</span>
+  <span class="client-logo">Holcim</span>
+  <span class="client-logo">MNC</span>
+  <span class="client-logo">Telkomsel</span>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="section-inner">
+    <div class="services-grid">
+      <div>
+        <!-- <span class="section-tag">What We Offer</span> -->
+        <h2 class="section-title">Our Excellent Services</h2>
+        <p class="section-sub">We are at your best service and are your possible assets in building your company.</p>
+      </div>
+      <div class="services-cards">
+        <div class="service-card">
+          <div class="service-img"><img src="Mask Group.png" alt=""></div>
+          <div class="service-body">
+            <h3>Industrial</h3>
+            <p>We have provided at your main idea of businesses like factory, construction, warehouse, and others.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="Mask Group (2).png" alt=""></div>
+          </div>
+          <div class="service-body">
+            <h3>Commercial</h3>
+            <p>The areas we offer you are commercial field like store, restaurants, supermarkets, and office buildings.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="Mask Group (1).png" alt=""></div>
+          <div class="service-body">
+            <h3>Residential</h3>
+            <p>Supporting your needs, everything is prepared to the top, with all development to the best apartments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="whyus">
+  <div class="section-inner">
+    <div class="whyus-inner">
+      <div>
+        <!-- <span class="section-tag">Our Advantage</span> -->
+        <h2 class="section-title">What Make Us Different?</h2>
+        <p class="section-sub">Check out what we can possibly assist in building your company's brand.</p>
+      </div>
+      <div class="why-cards">
+        <div class="why-card">
+          <div class="why-icon">⚙️</div>
+          <h4>Experienced</h4>
+          <p>Our experience of 25 years of building and making construction is the quality of measurement.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h4>Competitive Price</h4>
+          <p>The prices we offer are very competitive without compromising the quality we want in the original.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🕐</div>
+          <h4>On Time</h4>
+          <p>We prioritize the quality of our work and finish on time and trust.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🧱</div>
+          <h4>Best Materials</h4>
+          <p>The materials used for the building as we stand behind from you the best in quality materials.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section">
+  <div class="section-inner">
+    <div class="team-inner">
+      <div class="team-visual">
+        <div class="team-bg-img"><img width: 100%; height: 360px; src="Mask Group1.png" alt=""></div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img src="unsplash_IF9TK5Uy-KI.png" alt="Dianne Russell"></div>
+          <div class="team-card-info">
+            <h4>Dianne Russell</h4>
+            <p>Senior Architect – 25 years experience in National Construction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-content">
+        <span class="section-tag">Our Architects</span>
+        <h2>Meet and talk with our best architecture</h2>
+        <p>All our teams are professional and experienced architects. Handling many buildings with extensive work and ensuring the very best quality.</p>
+        <a href="#" class="btn-primary">See all team</a>
+        <a href="#" class="btn-outline">Find a team →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <div class="section-inner">
+    <div class="story-inner">
+      <div class="story-content">
+        <!-- <span class="section-tag">About Us</span> -->
+        <h2>Our Story<br/>Who we are</h2>
+        <p>Archiva Construction Corp. started as a General Contracting company with a budget of half and a handful throughout its history (1985). We focused and loved to finance every kind of project.</p>
+        <a href="#" class="btn-primary">See More</a>
+      </div>
+      <div class="story-img"><img src="mask Group2.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news">
+  <div class="section-inner">
+    <!-- <span class="section-tag">Latest Updates</span> -->
+    <h2 class="section-title">News & Update</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-img"><img src="Mask Group paint (2).png" alt=""></div>
+        <div class="news-body">
+          <p class="news-date">12 Jan</p>
+          <h3>Elements of Content in Young Projects</h3>
+          <p>When you need to learn something you will discover that it is actually a great thing with this introduction of building and construction.</p>
+          <a href="#" class="news-read">Read more</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img"><img src="house2.png" alt=""></div>
+        <div class="news-body">
+          <p class="news-date">12 Jan</p>
+          <h3>5 Right Steps to Warehouse Housing and Construction</h3>
+          <p>We are to help you build an excellent build. See what we have done and what they say about our service.</p>
+          <a href="#" class="news-read">Read more</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img"><img src="Mask Group house1.png" alt=""></div>
+        <div class="news-body">
+          <p class="news-date">12 Jan</p>
+          <h3>The Right Solution to Build a World-Type 4D House</h3>
+          <p>We are to help you build an excellent build. See our solution and with the best of our service and excellence.</p>
+          <a href="#" class="news-read">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+  <div class="section-inner">
+    <!-- <span class="section-tag">Portfolio</span> -->
+    <h2 class="section-title">Our collection best project</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="emoji"><img src="unsplash_jTCLppdwSEc.png" alt=""></span>
+        <div class="project-overlay"></div>
+<!--         <div class="project-info"><h4>Skyline Tower</h4><span>Commercial</span></div>
+ -->      </div>
+      <div class="project-card" style="background:linear-gradient(135deg,#1a3a5c,#2a5080)">
+        <span class="emoji"><img src="unsplash_l8fyK9RS-OU.png" alt=""></span>
+        <div class="project-overlay"></div>
+        <div class="project-info"><h4>Tresury Tower</h4><span>Project completed</span></div>
+      </div>
+      <div class="project-card" style="background:linear-gradient(135deg,#1c3a2a,#2a5040)">
+        <span class="emoji"><img src="unsplash_4CQEOLagfEE.png" alt=""></span>
+        <div class="project-overlay"><img src="unsplash_4CQEOLagfEE.png" alt=""></div>
+<!--         <div class="project-info"><h4>Green Residence</h4><span>Residential</span></div>
+ -->      </div>
+      <div class="project-card" style="background:linear-gradient(135deg,#3a1c2a,#502040)">
+        <span class="emoji"><img src="unsplash_gJFvHkUHdSI.png" alt=""></span>
+        </span>
+        <div class="project-overlay"></div>
+       <!--  <div class="project-info"><h4>Heritage Hall</h4><span>Commercial</span></div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="testimonial-inner">
+    <div class="testimonial-content">
+     <!--  <span class="section-tag" style="color:var(--accent2);border-color:var(--accent2);">Testimonials</span> -->
+      <h2>What we have done & what our Customers say</h2>
+      <p>We are to help you build an excellent build. See what we have done and what they have to say about our work and performance.</p>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote-icon">"</div>
+      <blockquote>Working with real estate was an absolute game changer for us. Their team delivered everything on time and the quality exceeded our expectations by far.</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar"><img height="100px" width="100px" src="unsplash_6anudmpILw4.png" alt=""></div>
+        <div>
+          <div class="author-name">Jakub Malen</div>
+          <div class="author-role">CEO, Malen Properties</div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="t-btn">←</button>
+        <button class="t-btn">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">General Project</div>
+        <p>We are a General Contracting company focused on delivering high-quality construction services across industrial, commercial, and residential sectors.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Industrial</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">Residential</a></li>
+          <li><a href="#">Renovation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">realestate.com</a></li>
+          <li><a href="#">+1222222222</a></li>
+          <li><a href="#">kumasi, usted campus</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="x"><img src="x.png" alt=""></div>
+      <div class="link"><img src="linked in.png" alt=""></div>
+      <div class="inst"><img src="Instagram (2).png" alt=""></div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
